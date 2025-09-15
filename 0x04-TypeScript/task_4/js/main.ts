@@ -4,31 +4,26 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-// Create constants
-const cpp = new Subjects.Cpp();
-const java = new Subjects.Java();
-const react = new Subjects.React();
+const cpp = new Cpp();
+const java = new Java();
+const react = new React();
 
-// Create teacher
-const cTeacher: Subjects.Teacher = {
-  firstName: 'John',
-  lastName: 'Doe',
+const cTeacher: Teacher = {
+  firstName: 'Guillaume',
+  lastName: 'Salva',
   experienceTeachingC: 10,
 };
 
-// For C++
 console.log('C++');
 cpp.setTeacher(cTeacher);
 console.log(cpp.getRequirements());
 console.log(cpp.getAvailableTeacher());
 
-// For Java
 console.log('Java');
 java.setTeacher(cTeacher);
 console.log(java.getRequirements());
 console.log(java.getAvailableTeacher());
 
-// For React
 console.log('React');
 react.setTeacher(cTeacher);
 console.log(react.getRequirements());
