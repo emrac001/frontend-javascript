@@ -4,11 +4,11 @@
 /// <reference path="./subjects/Java.ts" />
 /// <reference path="./subjects/React.ts" />
 
-const cpp = new Cpp();
-const java = new Java();
-const react = new React();
+const cpp = new Subjects.Cpp();
+const java = new Subjects.Java();
+const react = new Subjects.React();
 
-const cTeacher: Teacher = {
+const cTeacher: Subjects.Teacher = {
   firstName: 'Guillaume',
   lastName: 'Salva',
   experienceTeachingC: 10,
